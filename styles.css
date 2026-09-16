@@ -45,35 +45,43 @@ a {
 }
 
 .brand {
-  font: 500 25px/1 var(--serif);
-  letter-spacing: -1.5px;
+  text-decoration: none;
+  color: var(--ink);
+  display: inline-block;
 }
 
 .brand-with-icon {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.brand-with-icon em {
+/* Columna 1: La imagen del corazón */
+.heart-icon-img {
+  height: 32px !important;
+  width: auto !important;
+  max-width: none !important;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Columna 2: El texto del logo */
+.brand-text {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1.2px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-text em {
   font-style: italic;
   font-weight: 500;
-  margin-left: 2px;
-}
-
-.brand-with-icon > span:last-child {
-  font-style: normal;
-  margin-left: 0;
-}
-
-/* Ajuste fino del tamaño del logo corazón */
-.heart-icon-img {
-  height: 38px;
-  width: auto;
-  object-fit: contain;
-  vertical-align: middle;
-  display: inline-block;
-  flex-shrink: 0;
+  margin-left: 3px;
 }
 
 /* --- Navegación y Redes Sociales --- */
@@ -570,7 +578,10 @@ a {
     gap: 12px;
   }
   .heart-icon-img {
-    height: 30px;
+    height: 26px !important;
+  }
+  .brand-text {
+    font-size: 22px;
   }
   .hero {
     height: 680px;
