@@ -3,3 +3,45 @@
 .brand-with-icon{display:inline-flex;align-items:center;gap:9px}.brand-with-icon em{font-style:italic;font-weight:500;margin-left:2px}.heart-icon{display:block;width:30px;height:28px;flex:0 0 30px;background-image:url("assets/logo-sanando-a-tu-ex.png");background-repeat:no-repeat;background-size:77px auto;background-position:-23px -22px}@media(max-width:760px){.heart-icon{width:27px;height:25px;flex-basis:27px;background-size:69px auto;background-position:-21px -20px}}
 .heart-icon{width:36px;height:32px;flex-basis:36px;background-image:url("assets/corazon-rojo.png");background-size:149px auto;background-position:-57px -77px}@media(max-width:760px){.heart-icon{width:31px;height:27px;flex-basis:31px;background-size:126px auto;background-position:-48px -65px}}
 .brand-with-icon>span:last-child{font-style:normal;margin-left:0}
+
+/* --- Ajustes de imágenes y Hero de Fondo --- */
+
+/* Logo con corazon-rojo.png */
+.heart-icon-img {
+  height: 22px;
+  width: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* Hero con imagen de fondo */
+.hero.hero-with-bg {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)), url('assets/hero-montanas.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px 5% 40px 5%;
+}
+
+.hero.hero-with-bg h1,
+.hero.hero-with-bg .hero-copy,
+.hero.hero-with-bg .eyebrow,
+.hero.hero-with-bg .hero-note {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen de portada de la guía en tarjeta */
+.card-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
