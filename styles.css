@@ -59,7 +59,7 @@ a {
 /* Columna 1: La imagen del corazón */
 .heart-icon-img {
   height: 32px !important;
-  width: auto !important;
+  width: 32px !important;
   max-width: none !important;
   object-fit: contain;
   display: block;
