@@ -56,17 +56,17 @@ a {
   gap: 12px;
 }
 
-/* Columna 1: La imagen del corazón */
+/* Imagen del corazón */
 .heart-icon-img {
   height: 32px !important;
-  width: 32px !important;
+  width: auto !important;
   max-width: none !important;
   object-fit: contain;
   display: block;
   flex-shrink: 0;
 }
 
-/* Columna 2: El texto del logo */
+/* Texto del logo */
 .brand-text {
   font-family: var(--serif);
   font-size: 26px;
@@ -109,6 +109,34 @@ a {
   margin-left: 8px;
   border-left: 1px solid var(--line);
   padding-left: 20px;
+}
+
+/* Estilos de las imágenes de las redes sociales */
+.social-icon-img {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  opacity: 0.8;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1 !important;
+}
+
+.social-links a:hover .social-icon-img {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.footer-socials {
+  border-left: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .menu-button {
@@ -406,6 +434,7 @@ a {
 .footer-links {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 20px;
   font-size: 13px;
   flex-wrap: wrap;
