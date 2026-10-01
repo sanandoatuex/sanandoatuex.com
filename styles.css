@@ -789,3 +789,196 @@ a {
   background-color: var(--color-text, #2c2c2c);
   color: #ffffff;
 }
+
+/* ==========================================
+   ESTILOS PÁGINA GUÍAS DIGITALES
+   ========================================== */
+
+.guide-hero {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.product-detail-section {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.image-frame {
+  background-color: #f7f5f0;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-cover-img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.product-info-content h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-info-content .subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #f0eae1;
+  color: #7a5c4d;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+}
+
+.benefits-block {
+  margin-bottom: 1.8rem;
+}
+
+.benefits-block h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-size: 0.98rem;
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #a35d4d; /* Tono cálido acorde al sitio */
+  font-weight: bold;
+}
+
+.features-list {
+  background-color: #faf8f5;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Sección de Combo */
+.combo-highlight-section {
+  background-color: #f8f6f2;
+  border-radius: 24px;
+  padding: 3.5rem 2.5rem;
+  margin-top: 2rem;
+}
+
+.combo-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 3rem;
+  margin: 2.5rem 0;
+  align-items: center;
+}
+
+.combo-note-box {
+  background-color: #ffffff;
+  border-left: 4px solid #a35d4d;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin-top: 1.5rem;
+  font-size: 0.92rem;
+  color: #555;
+}
+
+.combo-offer-banner {
+  background-color: #ffffff;
+  border: 1px solid #e5dec9;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+}
+
+.offer-tag {
+  background-color: #a35d4d;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+.button-accent {
+  background-color: #a35d4d;
+  color: #ffffff;
+  padding: 0.9rem 1.6rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.button-accent:hover {
+  background-color: #88493b;
+}
+
+/* Responsive */
+@media (max-width: 868px) {
+  .product-grid,
+  .combo-content-grid,
+  .combo-offer-banner {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .combo-highlight-section {
+    padding: 2rem 1.25rem;
+  }
+}
