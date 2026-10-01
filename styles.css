@@ -791,7 +791,7 @@ a {
 }
 
 /* ==========================================
-   ESTILOS PÁGINA GUÍAS DIGITALES
+   ESTILOS PÁGINA GUÍAS DIGITALES (Aislados)
    ========================================== */
 
 .guide-hero {
@@ -806,7 +806,7 @@ a {
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.product-grid {
+.guide-detail-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 3.5rem;
@@ -830,14 +830,14 @@ a {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-.product-info-content h2 {
+.guide-info-content h2 {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 2.2rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.product-info-content .subtitle {
+.guide-info-content .subtitle {
   font-size: 1.1rem;
   color: #555;
   line-height: 1.6;
@@ -883,7 +883,7 @@ a {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #a35d4d; /* Tono cálido acorde al sitio */
+  color: #a35d4d;
   font-weight: bold;
 }
 
@@ -965,9 +965,9 @@ a {
   background-color: #88493b;
 }
 
-/* Responsive */
+/* Responsive Guías Digitales */
 @media (max-width: 868px) {
-  .product-grid,
+  .guide-detail-grid,
   .combo-content-grid,
   .combo-offer-banner {
     grid-template-columns: 1fr;
