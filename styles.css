@@ -679,3 +679,113 @@ a {
     margin-bottom: 0;
   }
 }
+
+/* ==========================================================================
+   Estilos para el Carrusel de Instagram
+   ========================================================================== */
+.stories-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.stories-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Ocultar scrollbar en Firefox */
+  padding: 1rem 0;
+}
+
+.stories-carousel::-webkit-scrollbar {
+  display: none; /* Ocultar scrollbar en Chrome/Safari */
+}
+
+.story-card {
+  min-width: 240px;
+  max-width: 240px;
+  height: 380px;
+  background-color: var(--color-surface, #fbf9f6);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.story-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.carousel-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s ease;
+}
+
+.carousel-btn:hover {
+  background: #ffffff;
+}
+
+.prev-btn {
+  left: -15px;
+}
+
+.next-btn {
+  right: -15px;
+}
+
+.instagram-cta-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.button-outline {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--color-text, #2c2c2c);
+  color: var(--color-text, #2c2c2c);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.button-outline:hover {
+  background-color: var(--color-text, #2c2c2c);
+  color: #ffffff;
+}
