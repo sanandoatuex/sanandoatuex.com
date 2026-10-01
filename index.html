@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Un espacio para volver a ti después de una ruptura." />
     <title>Sanando a tu ex — Vuelve a ti</title>
+    
+    <!-- Favicon (Ícono en la pestaña del navegador) -->
+    <link rel="icon" type="image/png" href="assets/corazon-rojo.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
@@ -108,14 +112,55 @@
         <p>“El amor que fue también puede convertirse en una forma de conocerte mejor.”</p>
       </section>
 
-      <section class="testimonials section">
+      <!-- Nueva sección: Carrusel de contenido de Instagram -->
+      <section class="instagram-stories-section section">
         <div class="section-heading">
-          <div><p class="eyebrow">Palabras que acompañan</p><h2>No estás sola en esto.</h2></div>
+          <div>
+            <p class="eyebrow">Comunidad & reflexiones</p>
+            <h2>Contenido para acompañarte día a día</h2>
+          </div>
+          <a class="text-link desktop-link" href="https://www.instagram.com/sanandoatuex_/" target="_blank" rel="noreferrer">
+            Síguenos en Instagram <span>→</span>
+          </a>
         </div>
-        <div class="testimonial-grid">
-          <figure><blockquote>“Sentí que por fin alguien entendía lo que no sabía explicar. Lo hice a mi ritmo y eso cambió todo.”</blockquote><figcaption>— Valentina, Bogotá</figcaption></figure>
-          <figure><blockquote>“No fue una solución mágica, fue un lugar seguro al que volver los días difíciles.”</blockquote><figcaption>— Mariana, Ciudad de México</figcaption></figure>
-          <figure><blockquote>“Me ayudó a volver a escucharme. Pequeño a pequeño, pero de verdad.”</blockquote><figcaption>— Laura, Medellín</figcaption></figure>
+
+        <div class="stories-carousel-wrapper">
+          <button class="carousel-btn prev-btn" id="prevStory" aria-label="Anterior">‹</button>
+          
+          <div class="stories-carousel" id="storiesCarousel">
+            <div class="story-card">
+              <img src="assets/instagram-logo.png" alt="Reflexión de Instagram 1" class="story-img" />
+              <div class="story-overlay">
+                <p>Recordatorio: Sanar no es un camino lineal.</p>
+              </div>
+            </div>
+            <div class="story-card">
+              <img src="assets/instagram-logo.png" alt="Reflexión de Instagram 2" class="story-img" />
+              <div class="story-overlay">
+                <p>Está bien sentir nostalgia y aún así saber que no debes volver.</p>
+              </div>
+            </div>
+            <div class="story-card">
+              <img src="assets/instagram-logo.png" alt="Reflexión de Instagram 3" class="story-img" />
+              <div class="story-overlay">
+                <p>Soltar también es una forma de amarte a ti misma.</p>
+              </div>
+            </div>
+            <div class="story-card">
+              <img src="assets/instagram-logo.png" alt="Reflexión de Instagram 4" class="story-img" />
+              <div class="story-overlay">
+                <p>Tu paz vale más que cualquier explicación que no te dieron.</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-btn next-btn" id="nextStory" aria-label="Siguiente">›</button>
+        </div>
+
+        <div class="instagram-cta-container">
+          <a href="https://www.instagram.com/sanandoatuex_/" target="_blank" rel="noreferrer" class="button button-outline">
+            Síguenos en Instagram para no perderte nada @sanandoatuex_
+          </a>
         </div>
       </section>
     </main>
