@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=v5" />
+    <link rel="stylesheet" href="styles.css?v=v6" />
   </head>
   <body>
     <header class="site-header">
@@ -41,64 +41,65 @@
     </header>
 
     <main>
-      <!-- Hero unificado con fondo de montañas y la misma estética -->
+      <!-- Hero de la tienda -->
       <section class="shop-hero">
         <div>
-          <p class="eyebrow">Recursos digitales · Herramientas en formato PDF</p>
+          <p class="eyebrow light">Recursos digitales · Herramientas en formato PDF</p>
           <h1>Guías prácticas para atravesar el proceso a tu propio ritmo.</h1>
           <p>Lecturas claras, honestas y ejercicios diseñados para calmar la mente y reconstruir tu autonomía.</p>
         </div>
       </section>
 
-      <!-- Sección Principal: Guías y Recursos -->
-      <section class="section">
+      <!-- Sección Principal de la Guía Digital -->
+      <section class="section product-detail-section">
         <!-- Guía N° 1 -->
-        <article class="guide-detail-card">
-          <div class="guide-image">
-            <img src="assets/portada-seccion-ebooks.png" alt="Portada de la guía Cómo Sanar a tu Ex" />
+        <article class="guide-detail-grid">
+          <div class="image-frame">
+            <img src="assets/portada-seccion-ebooks.png" alt="Portada de la guía Cómo Sanar a tu Ex" class="product-cover-img" />
           </div>
-          <div class="guide-content">
-            <p class="eyebrow">Guía Digital Nº 1</p>
+          <div class="guide-info-content">
+            <span class="eyebrow">Guía Digital Nº 1</span>
             <h2>Cómo Sanar a tu Ex</h2>
-            <p class="guide-intro">Una guía práctica y profundamente humana para ayudarte a soltar el vínculo, procesar el duelo y reconstruir tu identidad después de una relación.</p>
+            <p class="subtitle">Una guía práctica y profundamente humana para ayudarte a soltar el vínculo, procesar el duelo y reconstruir tu identidad después de una relación.</p>
             
-            <h3>¿Qué logras con esta guía?</h3>
-            <ul class="check-list">
-              <li><strong>Calmar la ansiedad y el desborde emocional</strong> cuando te sientas al límite.</li>
-              <li><strong>Cortar el ciclo de recaídas</strong> (mensajes, redes, idealización, esperanza).</li>
-              <li><strong>Entender por qué tu mente insiste...</strong> y cómo recuperar claridad mental.</li>
-              <li><strong>Atravesar el duelo</strong> sin quedarte atrapado en el sufrimiento.</li>
-              <li><strong>Recuperar tu autoestima</strong>, tus límites y tu dignidad emocional.</li>
-              <li><strong>Reconstruir tu vida</strong> sin depender de otra persona para sentirte completo/a.</li>
-            </ul>
+            <div class="benefits-block">
+              <h3>¿Qué logras con esta guía?</h3>
+              <ul class="checklist">
+                <li><strong>Calmar la ansiedad y el desborde emocional</strong> cuando te sientas al límite.</li>
+                <li><strong>Cortar el ciclo de recaídas</strong> (mensajes, redes, idealización, esperanza).</li>
+                <li><strong>Entender por qué tu mente insiste...</strong> y cómo recuperar claridad mental.</li>
+                <li><strong>Atravesar el duelo</strong> sin quedarte atrapado en el sufrimiento.</li>
+                <li><strong>Recuperar tu autoestima</strong>, tus límites y tu dignidad emocional.</li>
+                <li><strong>Reconstruir tu vida</strong> sin depender de otra persona para sentirte completo/a.</li>
+              </ul>
+            </div>
 
-            <div class="features-grid">
+            <div class="features-list">
               <div>✓ 1 ebook en formato PDF (Descarga inmediata)</div>
               <div>✓ Lectura fácil, rápida y sin rodeos</div>
               <div>✓ Ejercicios prácticos incluidos</div>
               <div>✓ Pago seguro y garantía de 7 días con Hotmart</div>
             </div>
 
-            <div class="buy-action">
-              <a href="#" class="button button-dark button-large">Obtener guía digital</a>
+            <div>
+              <a href="#" class="button button-dark">Obtener guía digital</a>
             </div>
           </div>
         </article>
+      </section>
 
-        <hr class="section-divider" />
-
-        <!-- Protocolo de Crisis (Herramienta Complementaria) -->
-        <article class="guide-detail-card">
-          <div class="guide-image">
-            <img src="assets/portada-protocolo-crisis.png" alt="Portada del Protocolo de Crisis Emocional" />
+      <!-- Sección de la herramienta complementaria (Protocolo de Crisis) -->
+      <section class="section product-detail-section">
+        <article class="guide-detail-grid">
+          <div class="image-frame">
+            <img src="assets/portada-protocolo-crisis.png" alt="Portada del Protocolo de Crisis Emocional" class="product-cover-img" />
           </div>
-          <div class="guide-content">
-            <p class="eyebrow">La herramienta complementaria</p>
+          <div class="guide-info-content">
+            <span class="eyebrow">La herramienta complementaria</span>
             <h2>Protocolo de crisis emocional</h2>
-            <p class="guide-intro">Un plan de acción rápido de contención para momentos de alto desborde o impulsividad.</p>
+            <p class="subtitle">Un plan de acción rápido de contención para momentos de alto desborde o impulsividad.</p>
 
-            <!-- Nota con la estética integrada de la marca -->
-            <div class="notice-box">
+            <div class="combo-note-box">
               <p>💡 <strong>Nota sobre esta guía:</strong> Este protocolo no se vende por separado. Fue creado exclusivamente para acompañar a la guía principal en momentos de máxima emergencia emocional.</p>
             </div>
           </div>
@@ -106,7 +107,7 @@
       </section>
 
       <!-- Preguntas frecuentes -->
-      <section class="faq section">
+      <section class="section faq">
         <div>
           <p class="eyebrow">Preguntas frecuentes</p>
           <h2>Todo lo que necesitas saber.</h2>
