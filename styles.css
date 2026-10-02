@@ -466,3 +466,51 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================
+   AJUSTE ESPECÍFICO PARA GUIAS DIGITALES
+   ========================================== */
+
+/* Asegura que el contenedor de la guía ordene 2 columnas */
+.guide-detail-card {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 3.5rem !important;
+  max-width: 1100px !important;
+  margin: 0 auto 3rem auto !important;
+  box-sizing: border-box !important;
+}
+
+/* Columna de la imagen: ancho fijo */
+.guide-detail-card .guide-image {
+  flex: 0 0 420px !important;
+  width: 100% !important;
+  max-width: 420px !important;
+}
+
+.guide-detail-card .guide-image img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  border-radius: 12px !important;
+}
+
+/* Columna del contenido: toma el resto del espacio */
+.guide-detail-card .guide-content {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+/* Adaptación móvil */
+@media (max-width: 850px) {
+  .guide-detail-card {
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+  
+  .guide-detail-card .guide-image {
+    flex: auto !important;
+    max-width: 100% !important;
+  }
+}
