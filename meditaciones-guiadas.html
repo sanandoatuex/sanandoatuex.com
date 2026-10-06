@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meditaciones guiadas para sanar una ruptura, soltar el pasado y recuperar tu valor." />
+    <title>Meditaciones guiadas — Sanando a tu ex</title>
+    <link rel="icon" type="image/png" href="assets/corazon-rojo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=v8" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand brand-with-icon" href="index.html" aria-label="Sanando a tu ex, inicio">
+        <img src="assets/corazon-rojo.png" alt="Sanando a tu ex" class="heart-icon-img" />
+        <span class="brand-text">sanando<em>a tu ex</em></span>
+      </a>
+      <button class="menu-button" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#proposito">Nuestro propósito</a>
+        <a class="active" href="productos.html">Recursos</a>
+        <div class="social-links">
+          <a href="https://www.instagram.com/sanandoatuex_/" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="assets/instagram-logo.png" alt="Instagram" class="social-icon-img" /></a>
+          <a href="https://www.tiktok.com/@sanandoatuex_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noreferrer" aria-label="TikTok"><img src="assets/tiktok-logo.png" alt="TikTok" class="social-icon-img" /></a>
+          <a href="https://youtube.com/@sanandoatuex?si=kD7vtOGhTiIHpsKm" target="_blank" rel="noreferrer" aria-label="YouTube"><img src="assets/yotube-logo.png" alt="YouTube" class="social-icon-img" /></a>
+          <a href="https://www.facebook.com/profile.php?id=61584561286079" target="_blank" rel="noreferrer" aria-label="Facebook"><img src="assets/facebook-logo.png" alt="Facebook" class="social-icon-img" /></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="shop-hero">
+        <div>
+          <p class="eyebrow light">Meditaciones guiadas</p>
+          <h1>Pausas para respirar.</h1>
+          <p>Elige una meditación, ponte cómodo/a y regresa a tu centro un momento a la vez.</p>
+        </div>
+      </section>
+
+      <!-- Reproductor -->
+      <section class="section med-player-section">
+        <div class="med-player">
+          <div class="med-video">
+            <iframe id="medFrame" src="https://www.youtube-nocookie.com/embed/_vSl3e-tKk4?rel=0" title="Sana las relaciones del pasado" loading="lazy" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="med-now">
+            <p class="card-type light" id="medDuration">5:28 minutos</p>
+            <h2 id="medTitle">Sana las relaciones del pasado</h2>
+            <p id="medDesc">Meditación para liberar las cargas del pasado.</p>
+            <a class="text-link" href="https://youtube.com/@sanandoatuex?si=kD7vtOGhTiIHpsKm" target="_blank" rel="noreferrer">Ver más en YouTube <span>→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selector -->
+      <section class="section med-list-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Elige tu meditación</p>
+            <h2>¿Qué necesitas hoy?</h2>
+          </div>
+        </div>
+        <div class="med-carousel" id="medCarousel">
+          <button class="med-card active" data-id="_vSl3e-tKk4" data-title="Sana las relaciones del pasado" data-duration="5:28 minutos" data-desc="Meditación para liberar las cargas del pasado." aria-pressed="true">
+            <span class="med-thumb"><img src="https://img.youtube.com/vi/_vSl3e-tKk4/hqdefault.jpg" alt="" loading="lazy" /></span>
+            <span class="med-info">
+              <span class="card-type">5:28 min</span>
+              <span class="med-name">Sana las relaciones del pasado</span>
+              <span class="med-sub">Para liberar las cargas del pasado.</span>
+            </span>
+          </button>
+          <button class="med-card" data-id="IryvSmiL6Ts" data-title="Sana tu ruptura amorosa" data-duration="6:42 minutos" data-desc="Meditación para sanar tu ruptura reciente." aria-pressed="false">
+            <span class="med-thumb"><img src="https://img.youtube.com/vi/IryvSmiL6Ts/hqdefault.jpg" alt="" loading="lazy" /></span>
+            <span class="med-info">
+              <span class="card-type">6:42 min</span>
+              <span class="med-name">Sana tu ruptura amorosa</span>
+              <span class="med-sub">Para sanar tu ruptura reciente.</span>
+            </span>
+          </button>
+          <button class="med-card" data-id="cGkha-iqwfs" data-title="Recupera tu valor" data-duration="8:20 minutos" data-desc="Meditación para recuperar el valor propio luego de una ruptura." aria-pressed="false">
+            <span class="med-thumb"><img src="https://img.youtube.com/vi/cGkha-iqwfs/hqdefault.jpg" alt="" loading="lazy" /></span>
+            <span class="med-info">
+              <span class="card-type">8:20 min</span>
+              <span class="med-name">Recupera tu valor</span>
+              <span class="med-sub">Para recuperar tu valor propio después de una ruptura.</span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section class="quote-band">
+        <p>“Respira. No tienes que resolverlo todo hoy.”</p>
+      </section>
+
+      <section class="section faq">
+        <div>
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Todo lo que necesitas saber.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>¿Cómo escucho las meditaciones?<span>+</span></summary>
+            <p>Elige una de la lista y el video se reproducirá arriba, sin salir de la página. Puedes verlas desde tu teléfono, tableta o computador.</p>
+          </details>
+          <details>
+            <summary>¿Qué necesito para meditar?<span>+</span></summary>
+            <p>Un lugar tranquilo donde puedas estar cómodo/a y, si lo prefieres, audífonos. No necesitas experiencia previa.</p>
+          </details>
+          <details>
+            <summary>¿Dónde encuentro más meditaciones?<span>+</span></summary>
+            <p>Publicamos nuevas meditaciones en nuestro canal de YouTube. Puedes suscribirte para no perderte ninguna.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a class="brand brand-with-icon" href="index.html">
+          <img src="assets/corazon-rojo.png" alt="Sanando a tu ex" class="heart-icon-img" />
+          <span class="brand-text">sanando<em>a tu ex</em></span>
+        </a>
+        <p>Un lugar amable para tu proceso.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Recursos</a>
+        <div class="social-links footer-socials">
+          <a href="https://www.instagram.com/sanandoatuex_/" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="assets/instagram-logo.png" alt="Instagram" class="social-icon-img" /></a>
+          <a href="https://www.tiktok.com/@sanandoatuex_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noreferrer" aria-label="TikTok"><img src="assets/tiktok-logo.png" alt="TikTok" class="social-icon-img" /></a>
+          <a href="https://youtube.com/@sanandoatuex?si=kD7vtOGhTiIHpsKm" target="_blank" rel="noreferrer" aria-label="YouTube"><img src="assets/yotube-logo.png" alt="YouTube" class="social-icon-img" /></a>
+          <a href="https://www.facebook.com/profile.php?id=61584561286079" target="_blank" rel="noreferrer" aria-label="Facebook"><img src="assets/facebook-logo.png" alt="Facebook" class="social-icon-img" /></a>
+        </div>
+      </div>
+      <small>© 2026 Sanando a tu ex. Hecho con calma.</small>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      const frame = document.getElementById('medFrame');
+      const cards = document.querySelectorAll('.med-card');
+      cards.forEach((card) => {
+        card.addEventListener('click', () => {
+          frame.src = 'https://www.youtube-nocookie.com/embed/' + card.dataset.id + '?rel=0&autoplay=1';
+          frame.title = card.dataset.title;
+          document.getElementById('medTitle').textContent = card.dataset.title;
+          document.getElementById('medDuration').textContent = card.dataset.duration;
+          document.getElementById('medDesc').textContent = card.dataset.desc;
+          cards.forEach((c) => { c.classList.remove('active'); c.setAttribute('aria-pressed', 'false'); });
+          card.classList.add('active');
+          card.setAttribute('aria-pressed', 'true');
+          document.querySelector('.med-player-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+    </script>
+  </body>
+</html>
