@@ -902,3 +902,186 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================
+   MEDITACIONES GUIADAS
+   Pega este bloque AL FINAL de styles.css
+   ========================================== */
+
+.med-player-section {
+  background: var(--ink);
+  color: var(--ivory);
+  padding-top: clamp(50px, 7vw, 100px);
+  padding-bottom: clamp(50px, 7vw, 100px);
+}
+
+.med-player {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: clamp(28px, 5vw, 80px);
+  align-items: center;
+  max-width: 1260px;
+  margin: auto;
+}
+
+.med-video {
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.med-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.med-now h2 {
+  font: 500 clamp(30px, 3.6vw, 48px)/1.08 var(--serif);
+  letter-spacing: -2px;
+  margin: 0 0 16px;
+}
+
+.med-now p:not(.card-type) {
+  color: #cfc8bb;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.card-type.light {
+  color: #ebe5d9;
+}
+
+.med-now .text-link {
+  border-bottom-color: var(--ivory);
+  margin-top: 24px;
+}
+
+.med-list-section {
+  padding-top: clamp(60px, 8vw, 110px);
+  padding-bottom: clamp(60px, 8vw, 110px);
+}
+
+.med-carousel {
+  display: flex;
+  gap: clamp(20px, 3vw, 40px);
+  max-width: 1260px;
+  margin: auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.med-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.med-card {
+  flex: 1 0 300px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  background: var(--ivory);
+  border: 1px solid var(--line);
+  padding: 0;
+  cursor: pointer;
+  transition: border-color .2s;
+}
+
+.med-card:hover,
+.med-card.active {
+  border-color: var(--ink);
+}
+
+.med-card:focus-visible {
+  outline: 2px solid var(--moka);
+  outline-offset: 3px;
+}
+
+.med-thumb {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+}
+
+.med-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.med-thumb::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 54px;
+  height: 54px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(250, 249, 246, .9)
+    linear-gradient(var(--ink), var(--ink)) no-repeat;
+  clip-path: circle(50%);
+}
+
+.med-thumb::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 5px);
+  top: 50%;
+  transform: translateY(-50%);
+  border-style: solid;
+  border-width: 9px 0 9px 15px;
+  border-color: transparent transparent transparent var(--ink);
+}
+
+.med-thumb::after {
+  background: rgba(250, 249, 246, .92);
+}
+
+.med-card.active .med-thumb::after {
+  background: var(--moka);
+}
+
+.med-card.active .med-thumb::before {
+  border-left-color: var(--ivory);
+}
+
+.med-info {
+  display: block;
+  padding: 22px 24px 26px;
+}
+
+.med-info .card-type {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.med-name {
+  display: block;
+  font: 500 24px/1.1 var(--serif);
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+
+.med-sub {
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .med-player {
+    grid-template-columns: 1fr;
+  }
+  .med-card {
+    flex-basis: 82%;
+  }
+}
